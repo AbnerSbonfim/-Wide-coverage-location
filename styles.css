@@ -1,0 +1,144 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-left: 42px;
+    margin-top: 32px;
+}
+
+.link-header {
+    color: #17233D;
+    font-weight: 500;
+    font-size: 14px;
+    padding-right: 32px;
+    cursor: pointer;
+}
+
+.button-header {
+    background: #6FBF44;
+    border: 1px solid #4CB538;
+    border-radius: 5px;
+    width: 124px;
+    height: 51px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 50%;
+    display: inline-block;
+}
+
+.positive-logo {
+    width: 40vw;
+    height: auto;
+    margin-top: 163px;
+    margin-left: 200px;
+}
+
+section {
+    display: inline-block;
+    margin-left: 120px;
+    margin-top: 259px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 62px;
+    width: 582px;
+    color: #161A49;
+    line-height: 82px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    width: 493px;
+    color: #4B505A;
+    line-height: 33px;
+    margin-top: 47px;
+    margin-bottom: 55px;
+}
+
+#link-more {
+    color: #6FBF44;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media screen and (max-width: 900px) {
+
+    .link-header {
+        display: none;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    section {
+        order: 1;
+        margin: 15% 0 0 0;
+        text-align: center;
+    }
+
+    .img {
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 20%;
+    }
+
+    .positive-logo {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 5% auto;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 38px;
+        width: 278px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+    p {
+        width: 304px;
+        height: auto;
+        text-align: center;
+        margin: 15% auto;
+    }
+
+    #link-more {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+  #link-more:hover{
+    cursor: pointer;
+  }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        margin: 24px 24px 0 0; 
+    }
+    
+}
